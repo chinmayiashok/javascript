@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h3>food priice checker</h3>
+<label for="foodname">enter any food name</label>
+<select name="food" id="">foodname>
+<option value="" disabled selected>--select menu--</option>
+<option value="dosa">dosa</option>
+<option value="idli">idli</option>
+<option value="chapathi">chapathi</option>
+<option value="pizza">pizza</option>
+</div>
+</div>
+<script>
+function foodpricechecker(){
+    let foodname = document.getElementById(`foodname`).value; //dosa
+    let result = document.getElementById(`result`); 
+switch(foodname){
+    case "dosa":
+        result.innertext = `the price of ${foodname} is 120/-only visit now`
+        result.style.color = "green"
+        result.style.backgroundColor = "rgb(48, 245, 97, 0.174)"
+        break;
+
+        case "idli":
+        result.innertext = `the price of ${foodname} is 120/-only visit now`
+        result.style.color = "green"
+        result.style.backgroundColor = "rgb(48, 245, 97, 0.174)"
+        break;
+
+        case "chapathi":
+        result.innertext = `the price of ${foodname} is 120/-only visit now`
+        result.style.color = "green"
+        result.style.backgroundColor = "rgb(48, 245, 97, 0.174)"
+        break;
+
+        case "pizza":
+        result.innertext = `the price of ${foodname} is 120/-only visit now`
+        result.style.color = "green"
+        result.style.backgroundColor = "rgb(48, 245, 97, 0.174)"
+        break;
+
+        default:
+        result.innertext = `the price of ${foodname} is 120/-only visit now`
+        result.style.color = "green"
+        result.style.backgroundColor = "rgb(48, 245, 97, 0.174)"
+        break;
+}
+}
+</script>
+</body>
+</html>

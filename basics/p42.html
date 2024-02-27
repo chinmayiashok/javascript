@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .card{
+            width: 250px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+
+        }
+        .card input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .card button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f7152c;
+            color: #fff;
+            font-size: 1.2rem;     
+          }
+        .card h2{
+            margin-bottom: 20px;
+        }
+        .card p{
+            width: 100%;
+            min-height: 100px;
+            background-color: #eeeeee;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+         <h2>calucation</h2>
+            <input type="text" id="firstnumber" placeholder="Enter First Number" required>
+            <input type="text" id="secondnumber" placeholder="Enter Second Number" required>
+            <input type="text" id="thirdnumber" placeholder="Enter Third Number" required>
+
+            <button type="button" onclick="hello()">Calucate</button>
+            <span><b>Result</b></span>
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+    <script>
+        // var firstnumber = "6"
+        // var secondnumber = "6"
+        // var thirdnumber = "6"
+       
+        function hello(){
+            var firstnumber = document.getElementById('firstnumber').value;
+            var secondnumber = document.getElementById('secondnumber').value
+            var thirdnumber = document.getElementById('thirdnumber').value
+
+            // document.getElementById('result').innerText = parseInt(firstnumber) + parseInt(secondnumber) + parseint(thirdnumber)
+        }
+var result = document.getElementById('result');
+if(fristnumber =="" || secondnumber =="" || thirdnumber ==""){
+result.innerText = "please fill required fields"
+result.style.color = "red"
+}
+         
+else if (fristnumber&secondnumber>thirdnumber){
+result.innerText = great! you entered all the fields in this data frist number ${firstnumber} and second number ${secondnumber} is greater than $(thirdnumber)
+result.style.color = "green"
+         }
+else if (fristnumber&secondnumber<thirdnumber){
+result.innerText = great! you entered all the fields in this data frist number ${firstnumber} and second number ${secondnumber} is lesser than $(thirdnumber)
+result.style.color = "green"
+}
+else{
+result.innerText = "please fill correct data"
+result.style.color = "red"
+}
+</script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("enter frist number:"));
+        var num2 = parseInt(prompt("enter second number:"));
+        var num3 = parseInt(prompt("enter third number:"));
+//var largest;
+
+if(num1 >= num2 && num1 >= num3){
+     largest = num1;
+}
+else if(num2 >= num1 && num2 >= num3){
+    largest = num2;
+}
+else{
+    largest = num3;
+}
+document.write("The largest number is " + largest);
+
+    </script>
+</body>
+</html>

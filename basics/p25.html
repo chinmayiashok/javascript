@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>non parameters return type function</h3>
+<script>
+    function product() {
+        //var a = 123;
+        //prompt() => browser object model property / window object
+        var a = prompt("Enter Number Input a?");
+        var b = window.prompt("Enter Number Input b?");
+        return number(a) * number(b);  // number() => constructor
+    }
+     var output = product();
+     document.write(`<h3> product = ${ output} </h3>`);
+</script>
+</body>
+</html>

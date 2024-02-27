@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h1 style="color:green"><Canvas>HEADING</Canvas></h1>
+<h4>Click the button to change the
+ number value into boolean.</h4>
+ <button onclick="myFunction()">Change</button>
+ <p>The number value of the variable is :</p>
+ <p id="result"></p>
+ <script>
+// Initializing boolvalue as true 
+let numvalue = 1;
+// JavaScript program to illustrate boolean 
+// conversion using ternary operator 
+function myFunction() {
+document.getElementById("result")
+.innerHTML = Boolean(numvalue);
+} 
+</script>
+</center>
+</body>
+</html>

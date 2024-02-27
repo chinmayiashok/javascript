@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-basic</title>
+</head>
+<body>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+            .card{
+                width: 250px;
+                padding: 10px;
+                box-shadow: 0px 0px 10px #ccc;
+    
+            }
+            .card input{
+                width: 100%;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                padding: 10px;
+                font-size: 1.2rem;
+                border: none;
+                outline: none;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            .card:hover{
+                background-color: rgb(255, 22, 22, 0.171);
+            }
+             button{
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: #f7152c;
+                color: #fff;
+                font-size: 1.2rem;     
+              }
+              button:hover{
+                border: 1px solid rgb(255, 22, 22);
+                background-color: transparent;
+                transition: 0.3s;
+                color: rgb(255, 22, 22);
+                cursor: pointer;
+            }
+            .card image{
+                width: 100%;
+                border-radius: 10px;
+            }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+    <div class="card">
+    <h2>special day checker</h2>
+    <input type="text" id="enterdate" placeholder="Enter date to check special day" id="date">
+    <p id="result"></p>
+    <button onclick="specialdayChecker()">check</button>
+    </div>
+    </div>
+    <script>
+    function  specialdateChecker(){
+     var date = document.getElementById('date').value;
+    var date = document.getElementById('image');
+    }
+    if (parseInt(date) ==1){
+    alert('this day is a new year..!')
+    image.src = 'https://img.freepik.com/free-psd/social-media-template-feed-happy-new-year-2024_220664-5068.jpg?size=626&ext=jpg&ga=GA1.1.2099681078.1705911249&semt=sph'
+    }  
+    else if (parseInt(date) ==26){
+    alert('this day is a republic day..!')
+    image.src = 'https://img.freepik.com/free-psd/social-media-template-feed-happy-new-year-2024_220664-5068.jpg?size=626&ext=jpg&ga=GA1.1.2099681078.1705911249&semt=sph'
+    }  
+    else{
+    image.src = 'https://img.freepik.com/free-psd/social-media-template-feed-happy-new-year-2024_220664-5068.jpg?size=626&ext=jpg&ga=GA1.1.2099681078.1705911249&semt=sph'
+    image.style.borderRadius = "50px"
+    }
+    function checker(){
+    var day = document.getElementById('days');
+    var result = document.getElementById('result')
+    if(day.value == ""){
+    day.style.border = "2px solid red"
+    result.innerText = "please select any option"
+    result.style.color = "red"
+}
+else if(day == 1){
+    alert('the date of new year is 1st jan')
+}
+else if(day == 26){
+    alert('the date of new year is 26th jan')
+}
+}
+</script>
+</body>
+</html>
